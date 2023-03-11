@@ -1,0 +1,276 @@
+@font-face {
+  font-family: 'Itim';
+  src: url(../FONTS/Itim-Regular.ttf) format('truetype');
+}
+
+body {
+  background-color: #202020;
+  background-image: radial-gradient(circle, #202020 20%, #030d20 70%);
+  background-repeat: no-repeat;
+  font-family: 'Itim', serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #dcdcdc;
+  overflow: hidden;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  }
+  
+  nav {
+  background-color: #202020;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  }
+  
+  nav .navbar-brand {
+      width: 100px;
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 10px;
+      background-image: url(../IMAGES/logo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0px 10px 0px 0px;
+      transition: all .3s;
+    }
+    
+    nav .navbar-brand:hover {
+      background-image: url(../IMAGES/logohover.png);
+    }
+    
+    nav .navbar-brand:not(:hover) {
+      background-image: url(../IMAGES/logo.png);
+    }
+    
+  
+  nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  }
+  
+  nav ul li {
+  margin: 0 10px;
+  }
+  
+  nav ul li a {
+      color: #dcdcdc;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out;
+      background-color: #202020;
+    }
+    
+    nav ul li a:hover {
+      background-color: #fca37a;
+      background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+      color: #94b8ff;
+    }
+    
+    nav ul li a.active {
+      background-color: #fca37a;
+      background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+      color: #94b8ff;
+    }
+  
+  .profile-button {
+  display: flex;
+  align-items: center;
+  color: #dcdcdc;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px; /* reduce the top and bottom padding */
+  border-radius: 10px;
+  background-color: #202020;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  }
+  
+  
+  .profile-button:hover {
+    background-color: #fca37a;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #94b8ff;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  .profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+  background-image: url(../IMAGES/signin.svg);
+  background-size: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0px 10px 0px 0px;
+  text-decoration: none;
+  }
+  
+  .button-link {
+    position: absolute;
+  }
+  
+  .profile-button:hover .profile-picture {
+  background-image: url(../IMAGES/signinhover.svg);
+  background-size: 50px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  }
+  
+  .profile_text {
+  font-family: 'Itim', serif;
+  font-size: 16px;
+  margin-right: 10px;
+  text-decoration: none;
+  max-width: 3.1em;
+  min-width: 3.1em;
+  }
+  .profile-dropdown {
+    position: relative;
+  }
+  
+  .profile-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    display: none;
+    margin-top: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-dropdown:hover .profile-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #dcdcdc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    background-color: #202020;
+  }
+  
+  .profile-menu a:hover {
+    background-color: #fca37a;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #94b8ff;
+  }
+  
+  .profile-menu a.active {
+    background-color: #fca37a;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #94b8ff;
+  }
+  
+  .profile-dropdown:hover .profile-button {
+    background-color: #fca37a;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #94b8ff;
+    transition: all 0.2s;
+  }
+  
+  
+  .profile-dropdown:hover .profile-picture {
+    background-image: url(../IMAGES/signinhover.svg);
+    background-size: 50px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .profile-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .profile-button:hover {
+    background-color: #fca37a;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #94b8ff;
+    transition: all 0.2s;
+  }
+  
+  .profile-picture {
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    background-image: url(../IMAGES/signin.svg);
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+  }
+  
+  .profile-button:hover .profile-picture {
+    background-image: url(../IMAGES/signinhover.svg);
+    background-size: 50px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .profile_text {
+    font-family: 'Itim', serif;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    padding: 0px, 0px .7em, 0px;
+    margin: 0;
+    background-color: #202020;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    text-align: center;
+  }
+   .dropdown-content a {
+    color: #dcdcdc;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1em 2em;
+    transition: all 0.3s ease-in-out;
+    background-color: #202020;
+    display: block;
+    border-radius: 20px;
+    margin-top: .5rem;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #fca37a;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #94b8ff;
+  }
+  
+  .profile-dropdown:hover .dropdown-content {
+    display: block;
+  }
