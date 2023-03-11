@@ -1,0 +1,67 @@
+.train {
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    transform: rotate(-15deg);
+    width: 200px;
+    height: 120px;
+    z-index: 1;
+  }
+  
+  .train-body {
+    background-color: #b39ddb;
+    width: 180px;
+    height: 80px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    box-shadow: 0px 0px 20px #b39ddb;
+  }
+  
+  .train-wheel {
+    background-color: #333;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0px 0px 10px #333;
+  }
+  
+  .train-wheel.left {
+    left: 30px;
+  }
+  
+  .train-wheel.right {
+    right: 30px;
+  }
+  
+  .train-track {
+    width: 100%;
+    height: 10px;
+    background-color: #333;
+    position: absolute;
+    bottom: 30px;
+  }
+  
+  .train-track:before {
+    content: '';
+    width: 50%;
+    height: 10px;
+    background-color: #333;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+  }
+  
+  .train-track:after {
+    content: '';
+    width: 50%;
+    height: 10px;
+    background-color: #333;
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+  }
+  
